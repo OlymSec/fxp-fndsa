@@ -94,3 +94,15 @@ modified by this standalone release.
 
 The ANSA authors' code is licensed under **BSD-2-Clause**. Third-party sources
 retain their original licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Paper
+
+[ansa-ibs-sc-full-v3.pdf](ansa-ibs-sc-full-v3.pdf), *Fixed-Point Antrag
+Signatures and Their Application to Compact Identity-Based Signatures*, gives
+concrete security bounds and a complete fixed-point implementation of Antrag,
+an NTRU signature scheme with annular trapdoors, at degrees 512, 768 and 1024.
+It proves ordinary and message-recovery unforgeability in the random-oracle
+model, and uses message recovery in the PKG certificate to build compact
+certificate-based identity-based signatures of 1,941, 2,960 and 3,884 bytes.
+This library is the paper's fixed-point Falcon baseline at degrees 512 and
+1024.
