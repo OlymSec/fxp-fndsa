@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "platform": "Linux-5.15.0-198-generic-aarch64-with-glibc2.35",
+  "machine": "aarch64",
+  "compilers": {
+    "cc": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+    "clang": "Ubuntu clang version 14.0.0-1ubuntu1.1"
+  },
+  "commands": [
+    "make -j4 all",
+    "make -j4 check check-protocol check-interop check-protocol-faults",
+    "make BUILD=build-clang CC=clang -j4 check check-protocol check-interop check-protocol-faults",
+    "make -j4 sanitize",
+    "make example"
+  ],
+  "original_protocol_vectors_preserved": true,
+  "profiles": [
+    512,
+    1024
+  ],
+  "unsupported_degrees_rejected": [
+    0,
+    1,
+    256,
+    768,
+    2048
+  ],
+  "logs_sha256": {
+    "build.log": "6707d8037674a83d859ff3d4feb568e90068e93497e43245241f3e29c6225ea4",
+    "check-final.log": "357182443a8bde84fb482a8c6c42808f22e0ced75e8ec94f4b5ee7e3d18c4f55",
+    "clang-check.log": "52adf637ddbd65de70ad59a354c27dc21f7ffb7ff658a68631544296bf709a57",
+    "sanitize.log": "6316490371cbb23dcea6898e71cad2cacefc178c3e7a53c6710353f640db66d9",
+    "example.log": "903032e9b29d82fe87d0e7e5b1d77df5a612d424e5484ebcf28cfc56c0b575e1"
+  },
+  "limitations": [
+    "Local validation was on Linux AArch64 only. GitHub CI for x86-64 and macOS is provided but has not run here.",
+    "No new performance measurements or complete side-channel certification."
+  ]
+}

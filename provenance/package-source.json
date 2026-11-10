@@ -1,0 +1,584 @@
+{
+  "source_project": "ANSA SDK",
+  "source_branch": "falcon768-mirror",
+  "source_commit": "ba1c4a4bfbdeda16f5569dfe2540caf441f4f34c",
+  "profiles": [
+    512,
+    1024
+  ],
+  "original_files": {
+    "Makefile": {
+      "source": "fxp-fndsa/Makefile",
+      "sha256": "fc67d7ebaa0ea5e98672e7f42590020d85c43269c7caa9735c588a8f2add564e"
+    },
+    "POW2-OPTIMIZATIONS.md": {
+      "source": "fxp-fndsa/POW2-OPTIMIZATIONS.md",
+      "sha256": "14da8ecfac14aa2b52dea29ccc1c7b53544bd0ce837d0b10f646e67356f2f525"
+    },
+    "PROTOCOL.md": {
+      "source": "fxp-fndsa/PROTOCOL.md",
+      "sha256": "5a80de92e3df4f20200c6fbab6f9c150811d8e1d44929e2551953a3b24c43516"
+    },
+    "bench/bench_sdk.c": {
+      "source": "fxp-fndsa/bench/bench_sdk.c",
+      "sha256": "0fb9b3547f80e12393627084444ded4fce4f353658d40e9ac45c12fd32c4fe92"
+    },
+    "src/antrag_port.h": {
+      "source": "fxp-fndsa/experimental/falcon768/vendor/antrag/port/antrag_port.h",
+      "sha256": "f8612ec8dfd18606692627518d065fbdfd0ceca9c61e2ab52b993d983547fdf3"
+    },
+    "src/port.c": {
+      "source": "fxp-fndsa/experimental/falcon768/vendor/antrag/port/port.c",
+      "sha256": "d5efbb48a35c49bb7ae6e797fc4bdeda5503eb070291c0d8c3d186cf2362e40b"
+    },
+    "provenance/import-sha256.json": {
+      "source": "fxp-fndsa/provenance/import-sha256.json",
+      "sha256": "14d82feb1511e33b65b411c2e4c5eb124d6d67d30783e529c1b8ccabe1431398"
+    },
+    "src/api.c": {
+      "source": "fxp-fndsa/src/api.c",
+      "sha256": "17136aed399d04a442826adaf9d85f4d0e765774e552139ca1a3c52ff323c142"
+    },
+    "src/pow2_clean.h": {
+      "source": "fxp-fndsa/src/pow2_clean.h",
+      "sha256": "596f3fcd2405a723fca6debf634ae95274ee052cbc1e2709163e63cb4a32823f"
+    },
+    "src/pow2_prepare.c": {
+      "source": "fxp-fndsa/src/pow2_prepare.c",
+      "sha256": "d7b28d8284b17c920b1fbba4a003a96a1a0f1ec71c413f95560170500b7464b0"
+    },
+    "src/pow2_prepare.h": {
+      "source": "fxp-fndsa/src/pow2_prepare.h",
+      "sha256": "ad663cf3a5727da3a8018eaad36f1021dd5d7541c93f0bff35fdb59c744fe025"
+    },
+    "src/pow2_window.h": {
+      "source": "fxp-fndsa/src/pow2_window.h",
+      "sha256": "33c130df9371b20cfc3b994afa4b80ddf1abd7be5ae967a3abec8558f47970f1"
+    },
+    "src/protocol.c": {
+      "source": "fxp-fndsa/src/protocol.c",
+      "sha256": "f46bc3d589615957215ff8dc64d3a824c8f2df78ff3827a04d17a657c02ae1be"
+    },
+    "src/protocol.h": {
+      "source": "fxp-fndsa/src/protocol.h",
+      "sha256": "4101dd2a48455618fcda252a9007abbfebe96169aae5daafc267596313ece5c4"
+    },
+    "tests/check_fndsa_interop.py": {
+      "source": "fxp-fndsa/tests/check_fndsa_interop.py",
+      "sha256": "6fb5b015de12ee5955b38e8d405efc38914cfe7f23273150190467daca32917e"
+    },
+    "tests/check_protocol.py": {
+      "source": "fxp-fndsa/tests/check_protocol.py",
+      "sha256": "87edc9d1f1750dd997e7c2647fe641e954c89dcccd0a1053e1a387a233624604"
+    },
+    "tests/protocol-vectors.json": {
+      "source": "fxp-fndsa/tests/protocol-vectors.json",
+      "sha256": "ca9a069ede51747787332067e62257c7b5e6a56f1e1ef4960215c8d61cc99ff5"
+    },
+    "tests/reference_pow2_half_convert.inc": {
+      "source": "fxp-fndsa/tests/reference_pow2_half_convert.inc",
+      "sha256": "f53e190e65872669405355c4b306462c2bf871affe68f8c5263e502f66588469"
+    },
+    "tests/test_api.c": {
+      "source": "fxp-fndsa/tests/test_api.c",
+      "sha256": "bd515bad05c36ce35365156e52eee5e2dc8cee6303a81eb8d255f609a5e6723e"
+    },
+    "tests/test_dlopen_threads.c": {
+      "source": "fxp-fndsa/tests/test_dlopen_threads.c",
+      "sha256": "5e2339350da3f0e98f9e6612bcc7d9d799bda41133a4f299ef01184bbb9a5c44"
+    },
+    "tests/test_falcon_keygen.c": {
+      "source": "fxp-fndsa/tests/test_falcon_keygen.c",
+      "sha256": "ef8461e11eab9757bb636ba5a1f01a9364637976d8f99a7ed414db2d37bbf41d"
+    },
+    "tests/test_falcon_keygen_api.c": {
+      "source": "fxp-fndsa/tests/test_falcon_keygen_api.c",
+      "sha256": "ca30aec0d4d8fc2a575e467e07321d31cbbfe140f6490e2258a3021223e4efbd"
+    },
+    "tests/test_fndsa_interop.c": {
+      "source": "fxp-fndsa/tests/test_fndsa_interop.c",
+      "sha256": "bcff6fd98fb6a935630c898685a6a9d1aa6b072557b112e8584560e1267b2c06"
+    },
+    "tests/test_mq_vector.c": {
+      "source": "fxp-fndsa/tests/test_mq_vector.c",
+      "sha256": "cc708da6d175d1f85f74f11717ac06446377764f0605e26f16d6e6127bddeb3f"
+    },
+    "tests/test_pow2_prepare.c": {
+      "source": "fxp-fndsa/tests/test_pow2_prepare.c",
+      "sha256": "df53d1491b542c287509f18bd755e2c7df767c040ed9b29ef1710450dec91d8a"
+    },
+    "tests/test_pow2_trace.c": {
+      "source": "fxp-fndsa/tests/test_pow2_trace.c",
+      "sha256": "de6d101274a742ebca2f52c845a5812d633f4bfa1697f8bfdc69cf7cb19e88f2"
+    },
+    "tests/test_pow2_window.c": {
+      "source": "fxp-fndsa/tests/test_pow2_window.c",
+      "sha256": "be1a3c511ae81176287ddafbc44ae9bc987108b7485cfffc4a3d380276e04eda"
+    },
+    "tests/test_protocol_codec.c": {
+      "source": "fxp-fndsa/tests/test_protocol_codec.c",
+      "sha256": "8bb67494b0b4a615aec43a5ad72ac2ecbe89ba54b1d273005fc26a17459f3ab8"
+    },
+    "tests/test_protocol_faults.c": {
+      "source": "fxp-fndsa/tests/test_protocol_faults.c",
+      "sha256": "3aab6f005654a6b6ae7d7c973d0f18f2b75f3fc736d46f079ad46c72ba34fe22"
+    },
+    "tests/test_replay.c": {
+      "source": "fxp-fndsa/tests/test_replay.c",
+      "sha256": "832bc9e78c077daee5fd8fafd9163131720b07b6346d062d74022c409750e786"
+    },
+    "tests/test_shake.c": {
+      "source": "fxp-fndsa/tests/test_shake.c",
+      "sha256": "581e93cd68fe272ce12977767b5efcfb644561c152f1850c79a8c78074b94b16"
+    },
+    "tools/check_import.py": {
+      "source": "fxp-fndsa/tools/check_import.py",
+      "sha256": "fd6ff8c7d709616eceae0730c9f05cddca853b18f804e58af18362c55cc57f80"
+    },
+    "tools/check_pow2_prepare_bounds.py": {
+      "source": "fxp-fndsa/tools/check_pow2_prepare_bounds.py",
+      "sha256": "31d44ab1dcdae5de5e79ce1617d21ea792628dfb82a73f2ed6f2cf5e5263fdf8"
+    },
+    "tools/check_symbols.py": {
+      "source": "fxp-fndsa/tools/check_symbols.py",
+      "sha256": "b70a91942eb9b3bfeb2e4b407a0e408a18f9b924a026bfc03cc69b4a26d62ca0"
+    },
+    "tools/exports.py": {
+      "source": "fxp-fndsa/tools/exports.py",
+      "sha256": "e7684f91886665511b6c7e0d53eb6d168a0073ca6f5508e326cb2bffbf6d5954"
+    },
+    "tools/generate_pow2_backend.py": {
+      "source": "fxp-fndsa/tools/generate_pow2_backend.py",
+      "sha256": "876ae024372a5e27e5c98edf3c23e2ed51430c6bbe6b4ef1529a1e08bbc4cbd9"
+    },
+    "tools/generate_protocol_sampler.py": {
+      "source": "fxp-fndsa/tools/generate_protocol_sampler.py",
+      "sha256": "6b1a51b47ff99d08dcd3283ebcee50be3f9fff50629f3b4795f08db6a9eca1fb"
+    },
+    "tools/generate_public_backend.py": {
+      "source": "fxp-fndsa/tools/generate_public_backend.py",
+      "sha256": "64b3e9d2294ffae11127f77e8ecec5d3698b1967541755b1eedfe57b9f7644ea"
+    },
+    "tools/generate_shake_backend.py": {
+      "source": "fxp-fndsa/tools/generate_shake_backend.py",
+      "sha256": "8bf6ad2ab9e159e5648a6af4d7492d672de3dc1d0ad1ea8d4aa759b2876cbe49"
+    },
+    "vendor/falcon/KEYGEN-BENCHMARK.md": {
+      "source": "fxp-fndsa/vendor/falcon/KEYGEN-BENCHMARK.md",
+      "sha256": "486da8c6ea8c06b29e966f2d1835bfe737a429de735c1f0922b728a1ca6d85ec"
+    },
+    "vendor/falcon/Makefile": {
+      "source": "fxp-fndsa/vendor/falcon/Makefile",
+      "sha256": "67e6efdf8d9a4fafe60b2f854fccf51238f0595881561cd93abfafa70be4ee6a"
+    },
+    "vendor/falcon/NTT-PROVENANCE.json": {
+      "source": "fxp-fndsa/vendor/falcon/NTT-PROVENANCE.json",
+      "sha256": "67490a27b346a60afd691cb2b0de85046dc72845317a9ed52b831bdd4e82863d"
+    },
+    "vendor/falcon/README.md": {
+      "source": "fxp-fndsa/vendor/falcon/README.md",
+      "sha256": "f09836d80d5c6844c7be35d80cb213d95f1bda75b48e47a9d7e90f66d4c941df"
+    },
+    "vendor/falcon/SUPPORT-REFINEMENT.md": {
+      "source": "fxp-fndsa/vendor/falcon/SUPPORT-REFINEMENT.md",
+      "sha256": "fa480bcd3b1d5c6a35525a23cb821f6998f2c03425cfebde0a66e59627b8da49"
+    },
+    "vendor/falcon/bench.sh": {
+      "source": "fxp-fndsa/vendor/falcon/bench.sh",
+      "sha256": "62e0affd0b429489da23cc2a81e06f5e97bd2be51df49cb30962f903a93b1ebe"
+    },
+    "vendor/falcon/capture.h": {
+      "source": "fxp-fndsa/vendor/falcon/capture.h",
+      "sha256": "b8e1161252066495b0401f841907283a14b60f1d887991464249ac5a0a07f3e6"
+    },
+    "vendor/falcon/certify.h": {
+      "source": "fxp-fndsa/vendor/falcon/certify.h",
+      "sha256": "5485241fd01729f8206300b2536377347fecb0846328933a6046f3204b7afac5"
+    },
+    "vendor/falcon/codec.c": {
+      "source": "fxp-fndsa/vendor/falcon/codec.c",
+      "sha256": "dc9922b8f433053543d266dd359f023a5b8956ca291a714eb3c8c1533e669afa"
+    },
+    "vendor/falcon/common.c": {
+      "source": "fxp-fndsa/vendor/falcon/common.c",
+      "sha256": "fa1fc8de982413d95a0b8b34149609e7bcce7b78333b1c17379d7ea02ff6845e"
+    },
+    "vendor/falcon/config.h": {
+      "source": "fxp-fndsa/vendor/falcon/config.h",
+      "sha256": "dbb1a971a553864f6716bf400e067f850f6adce6cea55a89ec24219ea0850447"
+    },
+    "vendor/falcon/cstime.h": {
+      "source": "fxp-fndsa/vendor/falcon/cstime.h",
+      "sha256": "aed2236d0c7f0e823182df270305ed9830018a30d0317f80b46cd6e4bb2a8d35"
+    },
+    "vendor/falcon/debug.h": {
+      "source": "fxp-fndsa/vendor/falcon/debug.h",
+      "sha256": "35933086b760e49ee056db71f6b65f090abe1ab0e53901dff5af1605d5efb645"
+    },
+    "vendor/falcon/exact_ntt.c": {
+      "source": "fxp-fndsa/vendor/falcon/exact_ntt.c",
+      "sha256": "25064446535c4c64caae2e29d46c58153a81b4a2e2ab6926b267bd3ac15db600"
+    },
+    "vendor/falcon/exact_ntt.h": {
+      "source": "fxp-fndsa/vendor/falcon/exact_ntt.h",
+      "sha256": "6289d1783054bc6b5b8a082365eba96b602d513e185fe5afb161dfefa4f26de7"
+    },
+    "vendor/falcon/exact_ntt_pair.inc": {
+      "source": "fxp-fndsa/vendor/falcon/exact_ntt_pair.inc",
+      "sha256": "1a6008ecd6b6ccf2c05c5c608078fb2cc47fdb84b11245733e166f5c3837bc48"
+    },
+    "vendor/falcon/falcon.c": {
+      "source": "fxp-fndsa/vendor/falcon/falcon.c",
+      "sha256": "f5108f8fba89b368b91d398265aa2853268c87f87208a4e77d321a49c4574d3f"
+    },
+    "vendor/falcon/falcon.h": {
+      "source": "fxp-fndsa/vendor/falcon/falcon.h",
+      "sha256": "9f49b9ef425781649d1c9f5837f1259c2717f6b12726f965d362232bb11ba342"
+    },
+    "vendor/falcon/falcon_mrm.c": {
+      "source": "fxp-fndsa/vendor/falcon/falcon_mrm.c",
+      "sha256": "9008d98c4e3e7353430ebfadf7733515a9e1d38fe741b7df321a95765a2c5565"
+    },
+    "vendor/falcon/falcon_mrm.h": {
+      "source": "fxp-fndsa/vendor/falcon/falcon_mrm.h",
+      "sha256": "dcfb88d32af49c06fef8780bfb6d505a10fc1cc497d322f8821417de1b35cf7b"
+    },
+    "vendor/falcon/fft.c": {
+      "source": "fxp-fndsa/vendor/falcon/fft.c",
+      "sha256": "e6bc4f62c8e89412ed7e2ebd4de996ab0590283454c963cf3a09e6a412bc91c9"
+    },
+    "vendor/falcon/find_issue.c": {
+      "source": "fxp-fndsa/vendor/falcon/find_issue.c",
+      "sha256": "6957eb83526d3d02f5bb24936e662ccf1818bcb1d4a8e64cc2e285a3272ec5e6"
+    },
+    "vendor/falcon/fpr.c": {
+      "source": "fxp-fndsa/vendor/falcon/fpr.c",
+      "sha256": "2861358aaf1cd86c11affff4c386b22357e228e2a8f694baf8c375b0f32d8331"
+    },
+    "vendor/falcon/fpr.h": {
+      "source": "fxp-fndsa/vendor/falcon/fpr.h",
+      "sha256": "da08ee653e0f38fb53f9d7a71bbb5f84408d71c0ac11467d5e7293d8f0e17006"
+    },
+    "vendor/falcon/gaussian0_int.h": {
+      "source": "fxp-fndsa/vendor/falcon/gaussian0_int.h",
+      "sha256": "eaf1ed4af0e0dfd1e7725ba8e5bf5d0651746eedc5f5864b6d3fe3a7a89c687d"
+    },
+    "vendor/falcon/inner.h": {
+      "source": "fxp-fndsa/vendor/falcon/inner.h",
+      "sha256": "bcbcd630ac4b8eee706d79a7bce7fd0f9e89a9dd74cf30f3f105306839dd5b22"
+    },
+    "vendor/falcon/keygen_ref/Makefile": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/Makefile",
+      "sha256": "e7dc605e466f699e2d19e4e57b9a4bf918a17bff3e8cb7de98d6ee2d6f27ab3c"
+    },
+    "vendor/falcon/keygen_ref/config.h": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/config.h",
+      "sha256": "254cea9d9ea2ee18c5121b8d5ad2f7d3cc4319a8b4f66cc34f9cc70c9b7a851d"
+    },
+    "vendor/falcon/keygen_ref/fft.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/fft.c",
+      "sha256": "e61a5af0b998f9701e5de783899eb2dffb0169fc78ce38574f1a9975bf15ad0a"
+    },
+    "vendor/falcon/keygen_ref/fpr.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/fpr.c",
+      "sha256": "6b9cd10b6a849ecc4cfc1f2f159d147fc94df4545f571618f7ef8e78a2d26c48"
+    },
+    "vendor/falcon/keygen_ref/fpr.h": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/fpr.h",
+      "sha256": "f1d04e17b8c99ae6c649406d0379721b24db428d047c9bea3b26686806deca72"
+    },
+    "vendor/falcon/keygen_ref/inner.h": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/inner.h",
+      "sha256": "47dead542c5225be46f798c7d39ba28a3954c6343ea27a7e7e63107ef20ac302"
+    },
+    "vendor/falcon/keygen_ref/keygen.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/keygen.c",
+      "sha256": "32f785c306e2400ff11d8cce38bd546d87e6f5a4155b1b9626796d8a51b3d42a"
+    },
+    "vendor/falcon/keygen_ref/rng.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/rng.c",
+      "sha256": "7968e4049a747cea06f3fca468894a6d3066681c347ee2b2921c211576e76c08"
+    },
+    "vendor/falcon/keygen_ref/shake.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/shake.c",
+      "sha256": "3c7201d3ec42d37a2c5c3ef12994b8f88067d1038ee2a99fc40e616c58e1c6ad"
+    },
+    "vendor/falcon/keygen_ref/vrfy.c": {
+      "source": "fxp-fndsa/vendor/falcon/keygen_ref/vrfy.c",
+      "sha256": "3b2ad42c568c2f665d7e3ad8093a08463029f69ac3938625183770dd678933eb"
+    },
+    "vendor/falcon/mq-vector.inc": {
+      "source": "fxp-fndsa/vendor/falcon/mq-vector.inc",
+      "sha256": "abd06ebe2ce21b282e2b7190355c005db48579582bf2ef0700b6ce4938ff1b71"
+    },
+    "vendor/falcon/ntrugen/LICENSE": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/LICENSE",
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e"
+    },
+    "vendor/falcon/ntrugen/README.md": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/README.md",
+      "sha256": "c7ca00db2eb6857f34ea117222f04cebf07ea1e5106537d0d820503091f4a100"
+    },
+    "vendor/falcon/ntrugen/src/Makefile": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/Makefile",
+      "sha256": "dc1f4b1b88d8cba322c46ad1b5bbd748ca8d81dfd62f9b1ec917c500e741a5ec"
+    },
+    "vendor/falcon/ntrugen/src/half/division.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/division.c",
+      "sha256": "4543f464be16841a75498afd3318c40e4bfd82119329cd3aad217b9b164eb41c"
+    },
+    "vendor/falcon/ntrugen/src/half/division.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/division.h",
+      "sha256": "0ce15016e1aa03c6a2f909e5e068d8d8fdf42c2bc132d2f1c7bb9016c17dae31"
+    },
+    "vendor/falcon/ntrugen/src/half/fft.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/fft.h",
+      "sha256": "1304c747b7f2f40a1824c3558a348aa89c541d6704fc0ddfaf8c30568e65b6b3"
+    },
+    "vendor/falcon/ntrugen/src/half/product.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/product.h",
+      "sha256": "6e8e3c337d8ec8f9986c09f171f01b1a545d66cdebbe0ec398b815ebeea8b0da"
+    },
+    "vendor/falcon/ntrugen/src/half/roots.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/roots.h",
+      "sha256": "a8ec9195e07abef4170240bcd53585a5b8c4bc507b1af18ebaf04d56f47b5610"
+    },
+    "vendor/falcon/ntrugen/src/half/solver.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/solver.c",
+      "sha256": "f7544be658dcd6f182ff8219e2b027afbf83bc722cfaae240ad8e37945506643"
+    },
+    "vendor/falcon/ntrugen/src/half/wide.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/half/wide.h",
+      "sha256": "a853e0602dcd8c23b7b4771eed72e55493c7005c75e6d51194d3cdca5a101de7"
+    },
+    "vendor/falcon/ntrugen/src/ng_bat.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_bat.c",
+      "sha256": "ee4edfa21c834243031ef74b575fafb9e5b7ae0b9a428fa1d1e89b7ca8d113c4"
+    },
+    "vendor/falcon/ntrugen/src/ng_config.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_config.h",
+      "sha256": "f2026dd80e43beda5b2da78b7676e382223c03afc4569910bc33fe67ea50eb38"
+    },
+    "vendor/falcon/ntrugen/src/ng_falcon.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_falcon.c",
+      "sha256": "6d8b5cdbbd9eab126e4b0437e7d571c738fcb9c2dc7a24330b69b6d3170837e3"
+    },
+    "vendor/falcon/ntrugen/src/ng_fxp.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_fxp.c",
+      "sha256": "c1fbc13e8e2bb0cf18b88db8730b6557fa16a23e6764af9e800e44d0f4a818ac"
+    },
+    "vendor/falcon/ntrugen/src/ng_gauss.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_gauss.c",
+      "sha256": "ad546c5f1ab77aeecfea1ac32e1d66cd5e1af5d6a5ecb7b50d09cefee97dd74b"
+    },
+    "vendor/falcon/ntrugen/src/ng_hawk.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_hawk.c",
+      "sha256": "f7663bccf91c0f7b2ec143672e4869589b977c2f0651c7b8525403f6cd4888df"
+    },
+    "vendor/falcon/ntrugen/src/ng_inner.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_inner.h",
+      "sha256": "562ae4c845e07b84a9d94a48d8a33565c5484b9e0cc6a748810280c9a56de60a"
+    },
+    "vendor/falcon/ntrugen/src/ng_mp31.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_mp31.c",
+      "sha256": "32e70e2e8d501a5e909bd678018d3c0cb27a6503cdb211aa720e154a50d537be"
+    },
+    "vendor/falcon/ntrugen/src/ng_mp31_neon.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_mp31_neon.c",
+      "sha256": "2b9235ccd239d0971148be4de79c92b9fd96f702e2cca35df425438105e6321d"
+    },
+    "vendor/falcon/ntrugen/src/ng_ntru.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_ntru.c",
+      "sha256": "e24833b64cbf0b796c1e13031bad64a30b85c3b4c3e74964f47b05e6e1d38b06"
+    },
+    "vendor/falcon/ntrugen/src/ng_poly.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_poly.c",
+      "sha256": "7bbede59fbd863235a17f4f3ff7c7fb03caede28d0b843422c0d9138af4ab3d9"
+    },
+    "vendor/falcon/ntrugen/src/ng_prng.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_prng.c",
+      "sha256": "a4bf3f422224de5e857d8ad1c1a28ac37d5ffec4e3219271812c744769db5e8c"
+    },
+    "vendor/falcon/ntrugen/src/ng_zint31.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ng_zint31.c",
+      "sha256": "c39d9486d7359714c0c22dff2324cc11ea8bc016d4dae6e62a787e6baf565f66"
+    },
+    "vendor/falcon/ntrugen/src/ntrugen.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ntrugen.h",
+      "sha256": "101eb0e68059abe0dbbe0d40c798af4124cc92ddee4dcde45dbb3c574b505820"
+    },
+    "vendor/falcon/ntrugen/src/ntrugen_prng.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/ntrugen_prng.h",
+      "sha256": "0ecbabd0c7963a9b02b38e40788ad8a182e1cb2de7084e8e757cab80304f4d48"
+    },
+    "vendor/falcon/ntrugen/src/sha3.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/sha3.c",
+      "sha256": "f715556701d4ccb3f18661e92596b3ee8e745428a396a5fcc1f4ea342e066223"
+    },
+    "vendor/falcon/ntrugen/src/sha3.h": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/sha3.h",
+      "sha256": "d7570e988e67dc02e018429c1669173aaf8d916354c3d2152e5f049278ba77aa"
+    },
+    "vendor/falcon/ntrugen/src/speed_ntrugen.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/speed_ntrugen.c",
+      "sha256": "dcf9b983119cb14590829b2c12966ebc9e8bdca348ddb2b842a288d671311ad3"
+    },
+    "vendor/falcon/ntrugen/src/test_ntrugen.c": {
+      "source": "fxp-fndsa/vendor/falcon/ntrugen/src/test_ntrugen.c",
+      "sha256": "80af460941231479a1bdc184b576cda74091095ec015633e5add6817ffb4af3a"
+    },
+    "vendor/falcon/opt_config.h": {
+      "source": "fxp-fndsa/vendor/falcon/opt_config.h",
+      "sha256": "01492336571b26434df7cee25d771f96507935e66d1724f12921e030aa67765c"
+    },
+    "vendor/falcon/rec_ntt.c": {
+      "source": "fxp-fndsa/vendor/falcon/rec_ntt.c",
+      "sha256": "3a0ea0c8d0afe154875260997f513612d031a9dbee19ca1ce2025439d6b60fb8"
+    },
+    "vendor/falcon/rec_ntt.h": {
+      "source": "fxp-fndsa/vendor/falcon/rec_ntt.h",
+      "sha256": "66ce6d3c96f5ec8fa828583527f2d8f6b057847e4d5f9e19dcd5e89df3275792"
+    },
+    "vendor/falcon/reconstruction.h": {
+      "source": "fxp-fndsa/vendor/falcon/reconstruction.h",
+      "sha256": "7de161a8dc9da48185632871ff438a75d369a9eb06808c8a8fc43cbe63d1d0c9"
+    },
+    "vendor/falcon/rng.c": {
+      "source": "fxp-fndsa/vendor/falcon/rng.c",
+      "sha256": "0a5be1889f447135f404c219c6c019af06df66abdaf7aa6dbe6167d9c4a5e127"
+    },
+    "vendor/falcon/shake.c": {
+      "source": "fxp-fndsa/vendor/falcon/shake.c",
+      "sha256": "791671f900f8254df26ee8585f5bbf86063bae67fa2683fa273e947a5d9265c5"
+    },
+    "vendor/falcon/shake_armv8.S": {
+      "source": "fxp-fndsa/vendor/falcon/shake_armv8.S",
+      "sha256": "a8912ef8af5122fb1810334612780dcc398489cb8625e29ede03d3f32126f4c5"
+    },
+    "vendor/falcon/sign.c": {
+      "source": "fxp-fndsa/vendor/falcon/sign.c",
+      "sha256": "442970b7b4acfb206957123f6be8b3855a2dca5aac0e3b31affcf83304190476"
+    },
+    "vendor/falcon/sign_ref.c": {
+      "source": "fxp-fndsa/vendor/falcon/sign_ref.c",
+      "sha256": "df63ff41edde29bd25c21fdccb0ac816f2f38ba4065d9def5c0066b432fb1e57"
+    },
+    "vendor/falcon/speed.c": {
+      "source": "fxp-fndsa/vendor/falcon/speed.c",
+      "sha256": "5d2aa99d2e0cb227c76f0514e1004221025ec183771f7d152ea60d4f4e5cdf52"
+    },
+    "vendor/falcon/test_falcon.c": {
+      "source": "fxp-fndsa/vendor/falcon/test_falcon.c",
+      "sha256": "cc8a0ee917b91ba7ded0060a16596406b8fe62be4f625a293996ade7a8e2dcab"
+    },
+    "vendor/falcon/test_timecop.c": {
+      "source": "fxp-fndsa/vendor/falcon/test_timecop.c",
+      "sha256": "fd07490f153dc7ab246ecfd0522405d3061b8401d6f80270cf23f1fa8b29b2dc"
+    },
+    "vendor/falcon/tests/bench_mrm.c": {
+      "source": "fxp-fndsa/vendor/falcon/tests/bench_mrm.c",
+      "sha256": "de182a626d5b44538729dde357328c00173be6a915908420a3f2efec00af7f1b"
+    },
+    "vendor/falcon/tests/test_mrm.c": {
+      "source": "fxp-fndsa/vendor/falcon/tests/test_mrm.c",
+      "sha256": "a1641e32f6143ea0d5fb7160dbc10d7d2eaa5c74cef01dfbb462984083ce9b7b"
+    },
+    "vendor/falcon/tests/test_support.c": {
+      "source": "fxp-fndsa/vendor/falcon/tests/test_support.c",
+      "sha256": "997d276f127985573d4b5ca91eddc6fe9eb685f637aefa5384f011bd37df715a"
+    },
+    "vendor/falcon/timecop.c": {
+      "source": "fxp-fndsa/vendor/falcon/timecop.c",
+      "sha256": "f9b1453daeaf6d0a4447f7c183dfde5c33fe5056c58b6e914a32bd659722a466"
+    },
+    "vendor/falcon/timecop/memcheck.h": {
+      "source": "fxp-fndsa/vendor/falcon/timecop/memcheck.h",
+      "sha256": "557a2a5106ed7bc88fd827ca7ea2ff75917a0ed7dd712ee7d42de6d5cdf4e153"
+    },
+    "vendor/falcon/timecop/parse.py": {
+      "source": "fxp-fndsa/vendor/falcon/timecop/parse.py",
+      "sha256": "795bbb2c997b7c832e0d09886c162b48ff40cf80372dee21b56066398111994b"
+    },
+    "vendor/falcon/timecop/poison.h": {
+      "source": "fxp-fndsa/vendor/falcon/timecop/poison.h",
+      "sha256": "857a8fcf8878968c10daf2bfdd289d569f31732a2d9d37f7021b0e3163d88a63"
+    },
+    "vendor/falcon/timecop/run_test.sh": {
+      "source": "fxp-fndsa/vendor/falcon/timecop/run_test.sh",
+      "sha256": "1aff79522fdc5e9b899653bff737151be3c45f739b6efd596facbfc6b7581d06"
+    },
+    "vendor/falcon/timecop/valgrind.h": {
+      "source": "fxp-fndsa/vendor/falcon/timecop/valgrind.h",
+      "sha256": "a97038d6d9e75e6508a697ca656c0cebe733d0633d2b2429d6430f3718ac7544"
+    },
+    "vendor/falcon/vrfy.c": {
+      "source": "fxp-fndsa/vendor/falcon/vrfy.c",
+      "sha256": "a06d72c1d1c8382ea6a8d8ebe8202b42f2e03009ed83427be26633cf807c6f1d"
+    },
+    "vendor/xkcp/KeccakP-1600-64.macros": {
+      "source": "fxp-fndsa/vendor/xkcp/KeccakP-1600-64.macros",
+      "sha256": "ea213b7ea46cd6ff6faa72156abe31bbc3cfc9d235bc3cb8f1e5b40ad80c4c5c"
+    },
+    "vendor/xkcp/KeccakP-1600-opt64.c": {
+      "source": "fxp-fndsa/vendor/xkcp/KeccakP-1600-opt64.c",
+      "sha256": "835a8bf731942067839af1ffb91c33ebff095848379c08f692da661f23ef6407"
+    },
+    "vendor/xkcp/KeccakP-1600-unrolling.macros": {
+      "source": "fxp-fndsa/vendor/xkcp/KeccakP-1600-unrolling.macros",
+      "sha256": "0ae4e8e66f10755dab37c72be6fb5b4b6c0e9cdd1ad162f41f9d24131d89830a"
+    },
+    "vendor/xkcp/LICENSE": {
+      "source": "fxp-fndsa/vendor/xkcp/LICENSE",
+      "sha256": "138d7bdf2ac34f062f12ccd0e4490da14fbd92a0d2602eba4e65f3470176b6ec"
+    },
+    "vendor/xkcp/keccak_permute.c": {
+      "source": "fxp-fndsa/vendor/xkcp/keccak_permute.c",
+      "sha256": "70b17efa3335965c8d684237c5f6a685b2fb93a5f99b465ecbcc36439202b4e2"
+    },
+    "vendor/xkcp/provenance.json": {
+      "source": "fxp-fndsa/vendor/xkcp/provenance.json",
+      "sha256": "677492843006201badedbb4d6bebf96054e25b11e270a3e0a8e1f4919b2c4455"
+    },
+    "include/ansa/fxp_fndsa.h": {
+      "source": "include/ansa/fxp_fndsa.h",
+      "sha256": "06b2bf677219ea342f50efcae7bab10f9ade66c246e2e6ccb9fee1be996c7a77"
+    },
+    "shared/verify_q12289.h": {
+      "source": "shared/verify_q12289.h",
+      "sha256": "69740dfe8568ef8e4564d21a7768151868b1e81346dc855e498b7024da29df93"
+    },
+    "shared/verify_q12289_tables.h": {
+      "source": "shared/verify_q12289_tables.h",
+      "sha256": "77dd94130f32dacefc4c3be3cbaaeea066f8fec47e99c9b37ddab2a17352f992"
+    }
+  },
+  "reference_commit": "10e9c031bce4705965305bb7e5923f8cd8e286e5",
+  "scope": "Independent 512/1024 distribution; no degree-768 implementation",
+  "packaging_changes": [
+    "Restrict the public API, protocol, verifier, tests and documentation to degrees 512/1024.",
+    "Bundle the generic private platform layer and required power-of-two verification tables.",
+    "Use repository-local include, build and interoperability-reference paths.",
+    "BSD-2-Clause for ANSA-owned code; third-party notices retained.",
+    "Add standalone README, example, CI and validation records."
+  ],
+  "modified_packaged_files": [
+    "Makefile",
+    "POW2-OPTIMIZATIONS.md",
+    "PROTOCOL.md",
+    "bench/bench_sdk.c",
+    "src/antrag_port.h",
+    "src/api.c",
+    "src/protocol.c",
+    "tests/check_fndsa_interop.py",
+    "tests/check_protocol.py",
+    "tests/protocol-vectors.json",
+    "tests/test_api.c",
+    "tests/test_fndsa_interop.c",
+    "tests/test_protocol_codec.c",
+    "tests/test_protocol_faults.c",
+    "tools/check_import.py",
+    "include/ansa/fxp_fndsa.h",
+    "shared/verify_q12289.h",
+    "shared/verify_q12289_tables.h"
+  ]
+}

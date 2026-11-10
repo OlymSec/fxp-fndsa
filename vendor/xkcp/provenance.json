@@ -1,0 +1,17 @@
+{
+  "upstream": "https://github.com/XKCP/XKCP",
+  "commit": "5585d0213203c0c5b2dfdf3b34f5da9275abc3e7",
+  "license": "CC0 for the selected permutation and macro sources; see LICENSE and file headers",
+  "original_paths": {
+    "LICENSE": "LICENSE",
+    "KeccakP-1600-64.macros": "lib/low/KeccakP-1600/common/KeccakP-1600-64.macros",
+    "KeccakP-1600-unrolling.macros": "lib/low/KeccakP-1600/common/KeccakP-1600-unrolling.macros",
+    "KeccakP-1600-opt64.c": "lib/low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c"
+  },
+  "sha256": {
+    "LICENSE": "138d7bdf2ac34f062f12ccd0e4490da14fbd92a0d2602eba4e65f3470176b6ec",
+    "KeccakP-1600-64.macros": "ea213b7ea46cd6ff6faa72156abe31bbc3cfc9d235bc3cb8f1e5b40ad80c4c5c",
+    "KeccakP-1600-unrolling.macros": "0ae4e8e66f10755dab37c72be6fb5b4b6c0e9cdd1ad162f41f9d24131d89830a",
+    "KeccakP-1600-opt64.c": "835a8bf731942067839af1ffb91c33ebff095848379c08f692da661f23ef6407"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "exact_ntt.h": {
+    "source": "/media/psf/Home/source_tree/qs-ibc/ansa-paper/sc/conference/antrag_fixed_point_mitaka/src/exact_ntt.h",
+    "sha256": "85226d9fe0be6e6cfc0b5e66f20fc33b68fde2350e69c80126623e62bb9f88ad"
+  },
+  "exact_ntt.c": {
+    "source": "/media/psf/Home/source_tree/qs-ibc/ansa-paper/sc/conference/antrag_fixed_point_mitaka/src/exact_ntt.c",
+    "sha256": "2c77ada3352771f52afd4171dbeb12a5ab27f55f89505ca20918087c9f486c17"
+  },
+  "exact_ntt_pair.inc": {
+    "source": "/media/psf/Home/source_tree/qs-ibc/ansa-paper/sc/conference/antrag_fixed_point_mitaka/src/exact_ntt_pair.inc",
+    "sha256": "de6dea7ca7de3d0b2e33b1b1fa0237ad879441a86981cc87be8e8319996784af"
+  }
+}
